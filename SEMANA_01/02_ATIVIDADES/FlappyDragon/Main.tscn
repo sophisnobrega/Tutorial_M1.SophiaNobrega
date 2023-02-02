@@ -36,6 +36,7 @@ size = 24
 font_data = ExtResource( 12 )
 
 [node name="Main" type="Node2D"]
+position = Vector2( 0, -1 )
 script = ExtResource( 3 )
 
 [node name="background" type="Sprite" parent="."]
@@ -52,7 +53,7 @@ frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="dragon"]
-position = Vector2( 80.0988, 76.026 )
+position = Vector2( 100, 84 )
 shape = SubResource( 2 )
 
 [node name="columns" type="Area2D" parent="."]
