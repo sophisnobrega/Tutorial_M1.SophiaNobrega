@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Cena 2d.gd" type="Script" id=1]
+
+[node name="Cena 2d" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="resposta" type="ColorRect" parent="."]
+margin_left = 72.0
+margin_top = 281.0
+margin_right = 992.0
+margin_bottom = 413.0
+color = Color( 0.054902, 0.0470588, 0.0470588, 1 )
+
+[node name="respostafinal" type="Label" parent="resposta"]
+margin_left = 245.0
+margin_top = 20.0
+margin_right = 709.0
+margin_bottom = 90.0
+
+[node name="resultado" type="Button" parent="."]
+margin_left = 337.0
+margin_top = 482.0
+margin_right = 729.0
+margin_bottom = 535.0
+action_mode = 0
+text = "RESULTADO"
+
+[node name="dado1" type="LineEdit" parent="."]
+margin_left = 82.0
+margin_top = 161.0
+margin_right = 330.0
+margin_bottom = 213.0
+
+[node name="dado2" type="LineEdit" parent="."]
+margin_left = 394.0
+margin_top = 163.0
+margin_right = 663.0
+margin_bottom = 226.0
+
+[node name="dado3" type="LineEdit" parent="."]
+margin_left = 741.0
+margin_top = 175.0
+margin_right = 989.0
+margin_bottom = 227.0
+
+[node name="dado4" type="Label" parent="."]
+margin_left = 181.0
+margin_top = 76.0
+margin_right = 221.0
+margin_bottom = 90.0
+rect_scale = Vector2( 2, 2 )
+text = "dado 1"
+
+[node name="dado5" type="Label" parent="."]
+margin_left = 386.0
+margin_top = 80.0
+margin_right = 508.0
+margin_bottom = 94.0
+rect_scale = Vector2( 2, 2 )
+text = "dado 2"
+align = 1
+valign = 1
+
+[node name="dado6" type="Label" parent="."]
+margin_left = 825.0
+margin_top = 82.0
+margin_right = 868.0
+margin_bottom = 96.0
+rect_scale = Vector2( 2, 2 )
+text = "dado 3"
+
+[connection signal="pressed" from="resultado" to="." method="_on_resultado_pressed"]
