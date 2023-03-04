@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Exercicio 3"
-run/main_scene="res://Cena 2d.tscn"
+config/name="Semana 3"
+run/main_scene="res://MAIN.tscn"
 config/icon="res://icon.png"
 
 [gui]
