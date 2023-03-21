@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://historia.gd" type="Script" id=1]
+
+[node name="historia" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -25.0
+margin_top = -21.0
+margin_right = 650.0
+margin_bottom = 320.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 18.0
+margin_right = 531.0
+margin_bottom = 151.0
+rect_scale = Vector2( 2, 2 )
+text = "Você é um soldado escolhido para enfrentar 
+o mal...
+Sua missão é salvar a vida da garotinha 
+Stefane, para isso, colete as cruzes para 
+terminar o ritual de exorcismo.
+
+
+Boa Sorte!"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 457.0
+margin_top = 256.0
+margin_right = 571.0
+margin_bottom = 288.0
+text = "PROXIMO"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
